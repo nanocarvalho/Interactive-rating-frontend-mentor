@@ -12,8 +12,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-rktrqgQU9)
-- Live Site URL: [Live site UR](https://interactive-rating-component-nano.pages.dev/)
+- [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-rktrqgQU9)
+- [Live site URL](https://interactive-rating-component-nano.pages.dev/)
 
 ## My process
 I tend to get a little lost when I have a lot of information to look, so, in this challenge I separeted into small parts to tacle. In this one I started with the hole HTML, then the css and for the last, the javascript.
