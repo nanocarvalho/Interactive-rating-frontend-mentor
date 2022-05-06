@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* variables to easy access */
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Almost-Dark-Blue: hsl(210, 20%, 20%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: #141519;
+    --Card-color-1: #191d23;
+    --Card-color-2: #232a34;
+}
+
+/* A simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+
+/* star rating container */
+.star-rating-container {
+    width: 360px;
+    background: linear-gradient(to top, var(--Card-color-1), var(--Card-color-2));
+    padding: 1.7rem;
+    border-radius: 1rem;
+}
+
+.star {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--Almost-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section h1 {
+    margin: 1rem 0;
+    color: var(--White);
+}
+
+.text-section p {
+    font-size: 0.9rem;
+    color: var(--Light-Grey);
+    margin-bottom: 2rem;
+}
+
+/* rating buttons */
+.rating-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rating-buttons ul {
+    display: flex;
+}
+
+.rating-buttons ul li {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.rating-buttons ul li:first-child{
+    margin-left: 0;
+}
+
+.btn-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--Almost-Dark-Blue);
+    color: var(--Light-Grey);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-option:hover {
+    color: var(--White);
+    background-color: var(--Light-Grey);
+}
+/* this makes the button stay selected */
+.btn-option:focus {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+/* submit */
+.btn-submit {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    border: 0;
+    border-radius: 2rem;
+    letter-spacing: 3px;
+    color: var(--White);
+    background-color: var(--Orange);
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+/* thank you sections */
+.thank-you-container {
+    width: 360px;
+    background: linear-gradient(to top, var(--Card-color-1), var(--Card-color-2));
+    padding: 1.7rem;
+    border-radius: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-container h2 {
+    color: var(--White);
+    margin: 1rem 0;
+}
+
+.thanks-text {
+    color: var(--Light-Grey);
+    text-align: center;
+}
+
+/* star text */
+.star-selected-text {
+    background-color: var(--Almost-Dark-Blue);
+    margin: 1rem 0;
+    border-radius: 2rem;
+}
+
+.star-selected-text p {
+    color: var(--Orange);
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+
+}
+
+/* attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Medium-Grey);
+    margin-top: 3rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
